@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Review Design</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 20px;
+        }
+        #main{
+            height: 480px;
+            width: 450px;
+            box-shadow: 2px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .img-card{
+            height: 80px;
+            width: 80px;
+            margin: 5px;
+            margin-top: 50px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+        .img-card :hover{
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Samsung Galaxy S24</h1>
+
+    <img src="1.jpg" alt="main" id="main">
+
+    <div class="product-images-container">
+        <img src="1.jpg" alt="1" class="img-card" onclick="changeImage(1)">
+        <img src="2.jpg" alt="2" class="img-card" onclick="changeImage(2)">
+        <img src="3.jpg" alt="3" class="img-card" onclick="changeImage(3)">
+        <img src="4.jpg" alt="4" class="img-card" onclick="changeImage(4)">
+        <img src="5.jpg" alt="5" class="img-card" onclick="changeImage(5)">
+    </div>
+    
+    <script>
+        const mainImg = document.getElementById("main");
+
+        function changeImage(num)
+        {
+            if(num == 1)
+            {
+                main.src = "1.jpg";
+            }else if(num == 2){
+                main.src = "2.jpg";
+            }else if(num == 3){
+                main.src = "3.jpg";
+            }else if(num == 4){
+                main.src = "4.jpg";
+            }else if(num == 5){
+                main.src = "5.jpg";
+            }
+        }
+
+    </script>
+</body>
+</html>
